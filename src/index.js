@@ -17,7 +17,7 @@ function playse(se) {
 
 $(() => {
   const state = [];
-  $(".inputqa").each((i, e) => {
+  $("input[data-ans]").each((i, e) => {
     state.push(false);
     const ans = $(e)
       .data("ans")
@@ -32,7 +32,7 @@ $(() => {
         if (state.reduce((a, c) => a && c)) {
           playse(se.finish);
         } else {
-          $(".inputqa:enabled")
+          $("input[data-ans]:enabled")
             .first()
             .focus();
         }
