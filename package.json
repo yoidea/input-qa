@@ -1,0 +1,42 @@
+{
+  "name": "input-qa",
+  "version": "0.1",
+  "description": "Simple questions and answers utility using HTML input tag.",
+  "keywords": [
+    "HTML",
+    "input",
+    "Q&A"
+  ],
+  "main": "index.js",
+  "license": "MIT",
+  "author": "@yoidea",
+  "homepage": "https://github.com/yoidea/input-qa",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yoidea/input-qa.git"
+  },
+  "dependencies": {
+    "jquery": "^3.4.1"
+  },
+  "devDependencies": {
+    "file-loader": "^4.2.0",
+    "mocha": "^6.1.4",
+    "prettier": "^1.18.2",
+    "webpack": "^4.39.2",
+    "webpack-cli": "^3.3.6"
+  },
+  "peerDependencies": {},
+  "scripts": {
+    "format": "prettier --write ./**/*.js",
+    "build": "webpack",
+    "test": "mocha tests/*.js"
+  },
+  "prettierConfig": {
+    "endOfLine": "lf",
+    "semi": true,
+    "singleQuote": false,
+    "tabWidth": 2,
+    "useTabs": false,
+    "trailingComma": "es5"
+  }
+}
